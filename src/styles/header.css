@@ -1,0 +1,34 @@
+header {
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  color: #dedede;
+}
+header .navlink {
+  color: #dedede;
+}
+.logo {
+  margin-left: 3vh;
+}
+.logo span {
+  color: #1a1919;
+}
+/*barre de recherche*/
+.search-bar {
+  border: none;
+  border: 1px solid #dedede;
+  padding: 8px 8px;
+  border-radius: 4px;
+  flex-wrap: nowrap;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #dedede;
+}
+
+::placeholder {
+  color: #dedede;
+}

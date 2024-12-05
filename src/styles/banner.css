@@ -1,0 +1,35 @@
+#banner {
+  padding: 5px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: #dedede;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+/*text*/
+.title-movie-banner {
+  font-size: x-large;
+}
+.overview-banner-movie {
+  font-size: large;
+  width: 70%;
+}
+/*button*/
+.button-watch-now {
+  width: 200px;
+  padding: 10px 0px;
+  justify-content: space-around;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #dedede;
+}
+
+.button-content{
+  color: #dedede;
+
+}
+
+.button-watch-now:hover {
+  background-color: rgba(255, 255, 255, 0.759);
+  color: black;
+}

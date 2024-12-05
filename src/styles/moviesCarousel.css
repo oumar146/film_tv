@@ -1,0 +1,67 @@
+.carousel-title {
+  font-size: x-large;
+  color: #dedede;
+  margin: 0px;
+  padding: 35px 35px;
+}
+
+.card img {
+  margin: auto;
+  border-radius: 3px;
+}
+
+/*flèches*/
+.slick-prev,
+.slick-next {
+  width: 70px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1000;
+  transition: background-color 0.2s ease;
+}
+.slick-prev:before {
+  left: 70%;
+}
+.slick-next:before {
+  left: 30%;
+}
+.slick-prev:before,
+.slick-next:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  transition: border-color 0.3s ease;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.movies-carousel:hover .slick-prev:before,
+.movies-carousel:hover .slick-next:before {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.slick-prev:before {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.slick-next:before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.focus:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease-in-out;
+}

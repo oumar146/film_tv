@@ -1,0 +1,60 @@
+#movie-page {
+  padding: 5px 30px;
+  color: #dedede;
+  display: flex;
+  flex-direction: column;
+  gap: 8vh;
+}
+
+.movie-page-container {
+  align-items: flex-start;
+  gap: 5vh;
+}
+/*details du film*/
+.movie-title {
+  font-size: 3em;
+  margin: 0px;
+  margin-bottom: 5vh;
+}
+
+.notation-and-date {
+  display: flex;
+  gap: 5px;
+  font-size: large;
+}
+
+.overview {
+  width: 100vh;
+  font-size: large;
+  margin-bottom: 8vh;
+}
+/*btn-trailer*/
+.trailer-btn {
+  color: #dedede;
+  text-decoration: none;
+  background-color: #1a1919;
+  width: 200px;
+  padding: 12px 15px;
+  justify-content: space-around;
+  border-radius: 3px;
+}
+
+.trailer-btn {
+  font-size: large;
+  color: #dedede;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 200px;
+  padding: 12px 15px;
+  border-radius: 3px;
+  color: #dedede;
+}
+
+.trailer-btn:hover {
+  background-color: rgba(43, 48, 73, 0.694);
+}
+
+/*acteurs*/
+.actor-name {
+  text-align: center;
+}
