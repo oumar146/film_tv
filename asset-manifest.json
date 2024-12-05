@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/film_tv/static/css/main.ae264dfa.css",
+    "main.js": "/film_tv/static/js/main.197ebe76.js",
+    "index.html": "/film_tv/index.html",
+    "main.ae264dfa.css.map": "/film_tv/static/css/main.ae264dfa.css.map",
+    "main.197ebe76.js.map": "/film_tv/static/js/main.197ebe76.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae264dfa.css",
+    "static/js/main.197ebe76.js"
+  ]
+}
