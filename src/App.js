@@ -2,11 +2,11 @@ import Home from './pages/Home';
 import PageMovie from './pages/MoviePage';
 import SearchedMovie from './pages/SearchedMovie';
 import MoviesByGenres from './pages/MoviesByGenres';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
         />
         <Route path="/movie-searched/:input" element={<SearchedMovie />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
