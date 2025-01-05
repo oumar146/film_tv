@@ -16,9 +16,9 @@ function MoviesByGenres() {
     }
 
     return (
-        <div className='container'>
+        <div>
             <Header />
-            <h2>Films du genre {genreName} : </h2>
+            <h2 className='search-results'>Films du genre {genreName} : </h2>
             <MovieListByGenre id={genreId} setData={setmovies} />
             {movies &&
                 <div className='movies'>

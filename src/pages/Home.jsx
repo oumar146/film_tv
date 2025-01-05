@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Movies from '../components/TMDB_API/Movies';
+import CardPlaceholder from '../components/CardPlaceholder';
 import MoviesCarousel from '../components/MoviesCarousel';
-import Snippet from '../components/Snippet';
+// import Snippet from '../components/Snippet';
 import '../styles/pages/home.css'
-
 /**SIMPLE COMPONENT */
 const ClassicMoviesCarousel = () => {
     const [classicMovies, setClassicMovies] = useState([]);
 
     if (!classicMovies) {
         return (
-            <Snippet />
+            <CardPlaceholder />
         )
     }
 
@@ -30,7 +30,7 @@ const PopularMoviesCarousel = () => {
 
     if (!popularMovies) {
         return (
-            <Snippet />
+            <CardPlaceholder />
         )
     }
 
@@ -49,7 +49,7 @@ const TopRatedMoviesCarousel = () => {
 
     if (!topRatedMovies) {
         return (
-            <Snippet />
+            <CardPlaceholder />
         )
     }
 
