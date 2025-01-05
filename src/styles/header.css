@@ -1,23 +1,30 @@
 header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #dedede;
+  position: top;
   top: 0;
-  color: #dedede;
+  z-index: 1000;
 }
-header .navlink {
-  color: #dedede;
+
+.logo .navlink {
+  color: #db0000;
+  text-decoration: none;
 }
+
 .logo {
-  margin-left: 3vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
 }
-.logo span {
-  color: #1a1919;
-}
-/*barre de recherche*/
+
 .search-bar {
-  border: none;
+  display: flex;
+  align-items: center;
   border: 1px solid #dedede;
-  padding: 8px 8px;
+  padding: 8px;
   border-radius: 4px;
   flex-wrap: nowrap;
 }
@@ -27,8 +34,92 @@ header .navlink {
   outline: none;
   background-color: transparent;
   color: #dedede;
+  padding: 5px;
+  flex: 1;
 }
 
 ::placeholder {
   color: #dedede;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 18px;
+  align-items: center;
+}
+
+.genres-list {
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+.dropdown-item,
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.79);
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: underline;
+  color: white;
+}
+
+.header-link .navlink {
+  color: white;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: rgba(255, 255, 255, 0.759);
+  cursor: pointer;
+}
+
+.header-link .dropdown-item:hover {
+background: black;
+}
+
+@media screen and (max-width: 768px) {
+  .header-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #dedede;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Styles pour afficher le menu sur mobile */
+.menu-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.menu-links li {
+  margin-bottom: 10px;
 }

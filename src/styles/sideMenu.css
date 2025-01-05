@@ -24,8 +24,16 @@
   align-items: flex-start;
   padding: 15px 15px;
 }
+
+.dropdown-toggle{
+padding: 0px;
+}
+
+
+
+
 /*liste des genres*/
-.genre-title {
+/* .genre-title {
   font-size: xx-large;
   margin: 0px;
   margin-bottom: 15px;
@@ -44,4 +52,16 @@
 .genres-list li:hover {
   color: white;
   transform: scale(1.05);
+} */
+.burger-menu li {
+  list-style: none;
+}
+
+
+@media screen and (min-width: 600px) {
+  .side-menu, .burger-menu
+  {
+    display: none;
+  }
+
 }

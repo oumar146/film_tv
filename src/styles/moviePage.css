@@ -29,21 +29,12 @@
   margin-bottom: 8vh;
 }
 /*btn-trailer*/
-.trailer-btn {
-  color: #dedede;
-  text-decoration: none;
-  background-color: #1a1919;
-  width: 200px;
-  padding: 12px 15px;
-  justify-content: space-around;
-  border-radius: 3px;
-}
 
 .trailer-btn {
   font-size: large;
   color: #dedede;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #db0000b6;
   width: 200px;
   padding: 12px 15px;
   border-radius: 3px;
@@ -51,10 +42,11 @@
 }
 
 .trailer-btn:hover {
-  background-color: rgba(43, 48, 73, 0.694);
+  background-color: #db0000a0
 }
 
 /*acteurs*/
 .actor-name {
   text-align: center;
+  color: rgba(255, 255, 255, 0.821);
 }

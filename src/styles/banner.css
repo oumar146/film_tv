@@ -19,17 +19,24 @@
   width: 200px;
   padding: 10px 0px;
   justify-content: space-around;
+  align-items: center;
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #dedede;
+  background-color: white;
+  color: #000000	;
+  cursor: pointer;
 }
 
 .button-content{
-  color: #dedede;
-
+  color: #000000	;
 }
 
-.button-watch-now:hover {
+.button-watch-now:hover{
   background-color: rgba(255, 255, 255, 0.759);
-  color: black;
 }
+
+.button-watch-now,
+.button-content, 
+.button-watch-now * {
+  transition: color 0.3s ease, cursor 0.3s ease;
+}
+
