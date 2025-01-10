@@ -1,5 +1,5 @@
 #movie-page {
-  padding: 5px 30px;
+  padding: 5vh 30px;
   color: #dedede;
   display: flex;
   flex-direction: column;
@@ -55,15 +55,15 @@ border-radius: 2px;
   background-color: #db0000a0
 }
 
-/*acteurs*/
-.actor-name {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.821);
-}
 
 @media screen and (max-width: 600px) {
   .content, .movie-page-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+  }
+  .movie-page-container img{
+    width: 100%;
+    margin: auto;
   }
 }

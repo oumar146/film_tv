@@ -2,57 +2,39 @@
 .side-menu-button {
   background-color: transparent;
   border: none;
-  color: #dedede;
+  color: #eeeeee69;
+  
 }
 
 .side-menu-button:hover {
-  color: white;
+  color: #eeeeeeb0;
   transform: scale(1.04);
 }
 
 /*menu*/
 .side-menu {
-  background-color: #1a1919;
+  background-color: black;
   height: 100vh;
   width: 50vh;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 1;
-  color: #dedede;
+  color: #eeeeee69;
   justify-content: space-between;
   align-items: flex-start;
   padding: 15px 15px;
+  font-size:20px;
 }
-
+.side-menu ul{
+display: flex;
+flex-direction: column;
+gap: 1.5vh;
+}
 .dropdown-toggle{
 padding: 0px;
 }
 
-
-
-
-/*liste des genres*/
-/* .genre-title {
-  font-size: xx-large;
-  margin: 0px;
-  margin-bottom: 15px;
-}
-
-.genres-list {
-  list-style-type: none;
-  font-size: larger;
-  margin: 0px;
-  padding: 0px;
-}
-.genres-list li {
-  margin-bottom: 5px;
-}
-
-.genres-list li:hover {
-  color: white;
-  transform: scale(1.05);
-} */
 .burger-menu li {
   list-style: none;
 }

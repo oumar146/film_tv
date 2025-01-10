@@ -4,43 +4,14 @@ import "../styles/sideMenu.css";
 import { NavLink } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 
-// const GenresList = (props) => {
-//   const [listGenres, setListGenres] = useState([]);
-//   return (
-//     <div>
-//       <MovieGenres setData={setListGenres} />
-//       {listGenres && (
-//         <div>
-//           {/**Afficher la liste des genres*/}
-//           <ul className="genres-list">
-//             {listGenres.map((genre) => (
-//               <li
-//                 key={genre.id}
-//                 onClick={() => (props.setShow(false), window.scrollTo(0, 0))}
-//               >
-//                 <NavLink
-//                   className="navlink"
-//                   to={`/movie-by-genre/${genre.name}/${genre.id}`}
-//                 >
-//                   {genre.name}
-//                 </NavLink>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
 const ShowMenuButton = (props) => {
   return (
     <div className="sideMenu-btn">
       <button onClick={props.handleShow} className="side-menu-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
+          width="50"
+          height="50"
           fill="currentColor"
           className="bi bi-list position-sticky"
           viewBox="0 0 16 16"

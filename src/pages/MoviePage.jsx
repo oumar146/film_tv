@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Slider from "react-slick";
 import MovieDetails from '../components/TMDB_API/MovieDetails';
-import MovieActors from '../components/TMDB_API/MovieActors';
 import SimilarMovies from '../components/TMDB_API/SimilarMovies';
 import MovieVideo from '../components/TMDB_API/MovieVideo';
 import Snippet from '../components/Snippet';
@@ -62,6 +61,7 @@ const Recommendations = (props) => {
     return (
         <div>
             <SimilarMovies id={props.movieId} setData={setRecommendations} />
+            <h4 className='carousel-title'>Vous pouvez aimer</h4>
             <Slider Slider {...settings}  >
                 {
                     recommendations.map((movie) => (
@@ -78,77 +78,6 @@ const Recommendations = (props) => {
         </div>
     )
 }
-
-const Actors = (props) => {
-    const [actors, setActors] = useState([])
-
-    //configuration du caroussel
-    const settings = {
-        infinite: true,
-        slidesToShow: 4,
-        speed: 500,
-        initialSlide: 4,
-        slidesToScroll: 4,
-        ardivs: true,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: true,
-                    centerMode: false,
-                },
-            },
-            {
-                breakpoint: 922,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    initialSlide: 3,
-                    centerMode: false,
-                },
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerMode: false,
-                    centerPadding: '0px',
-                },
-            },
-        ],
-    };
-
-    if (!actors) {
-        return (
-            <Snippet />
-        )
-    }
-
-    return (
-        <div>
-            <MovieActors id={props.movieId} setData={setActors} />
-            <Slider Slider {...settings}  >
-                {
-                    actors.map((actor) => (actor.profile_path &&
-                        <div key={actor.id} className="card" >
-                            <img src={`https://image.tmdb.org/t/p//w300/${actor.profile_path}`}
-                                alt={actor.name}
-                                title={actor.name}
-                            />
-                            <p className='actor-name'>{actor.character}<br /> <span>{actor.name}</span></p>
-                        </div>
-                    ))
-                }
-            </Slider >
-        </div>
-    )
-}
-
-
-
 
 const Detail = (props) => {
 
@@ -226,21 +155,23 @@ const PageMovie = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), #181818), url(https://image.tmdb.org/t/p/original/${movieDetails.backdrop_path})`,
+                backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.9), #181818), url(https://image.tmdb.org/t/p/original/${movieDetails.backdrop_path})`,
             })
 
     }, [movieDetails])
 
 
     return (
-        <div id='movie-page' style={backgroundImageStyle}>
+        <div>
             <Header />
+            <div id='movie-page' style={backgroundImageStyle}>
             <Detail movieId={movieId} movieDetails={movieDetails} setMovieDetails={setMovieDetails}>
                 <TrailerButton movieId={movieId} />
             </Detail>
             <Recommendations movieId={movieId} />
-            <Actors movieId={movieId} />
         </div>
+        </div>
+
     );
 }
 

@@ -57,7 +57,7 @@ const Banner = (props) => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), #1a1919), url(https://image.tmdb.org/t/p/original/${bannerMovie[0].backdrop_path})`,
+                backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.4), black), url(https://image.tmdb.org/t/p/original/${bannerMovie[0].backdrop_path})`,
             });
         }
     }, [bannerMovie]);

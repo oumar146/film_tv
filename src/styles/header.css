@@ -4,7 +4,7 @@ header {
   align-items: center;
   padding: 10px 20px;
   background-color: transparent;
-  color: #dedede;
+  color: #eeeeee69;
   position: top;
   top: 0;
   z-index: 1000;
@@ -23,23 +23,30 @@ header {
 .search-bar {
   display: flex;
   align-items: center;
-  border: 1px solid #dedede;
+  border: 1px solid #eeeeee69;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 100px;
   flex-wrap: nowrap;
+
 }
 
 .search-bar input {
   border: none;
   outline: none;
   background-color: transparent;
-  color: #dedede;
+  color: #eeeeeeb0;
   padding: 5px;
   flex: 1;
 }
 
+.search-bar svg {
+color: #eeeeee69;
+margin: 0px 2vh 0px 1vh;
+
+;
+}
 ::placeholder {
-  color: #dedede;
+  color: #eeeeee69;
 }
 
 .header-links {
@@ -51,15 +58,15 @@ header {
 }
 
 .genres-list {
-  color: white;
+  color: #eeeeee69;
   border: none;
-  font-size: 18px;
+  font-size:20px;
 }
 
 .dropdown-item,
 .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.79);
-  color: white;
+  color: #eeeeee69;
 }
 
 .dropdown-item:hover {
@@ -69,12 +76,12 @@ header {
 }
 
 .header-link .navlink {
-  color: white;
+  color: #eeeeee69;
   text-decoration: none;
 }
 
 .header-link:hover {
-  color: rgba(255, 255, 255, 0.759);
+  color:#eeeeeeb0;
   cursor: pointer;
 }
 

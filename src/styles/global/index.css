@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.952);
 }
 .horizontal-alignment {
   display: flex;
@@ -20,6 +20,14 @@ body {
   animation: spin 2s linear infinite;
 }
 
+.carousel-title {
+  font-size: 1.8rem;
+  color: #dedede;
+  margin: 0;
+  padding: 20px 20px;
+  text-align: center;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -28,3 +36,4 @@ body {
     transform: rotate(360deg);
   }
 }
+

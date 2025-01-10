@@ -12,7 +12,15 @@
 }
 .overview-banner-movie {
   font-size: large;
-  width: 70%;
+  width: 100%;
+
+}
+@media screen and (min-width: 768px) {
+  .overview-banner-movie {
+    font-size: large;
+    width: 70%;
+  
+  }
 }
 /*button*/
 .button-watch-now {
@@ -21,7 +29,7 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 3px;
-  background-color: white;
+  background-color: #eeeeeeb0;
   color: #000000	;
   cursor: pointer;
 }
